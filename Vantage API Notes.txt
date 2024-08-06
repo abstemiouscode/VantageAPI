@@ -1,0 +1,66 @@
+Assumptions and Design Decisions
+
+InMemory Database:
+
+This is suitable for development and testing but should be replaced with a persistent database for production.
+
+No Authentication/Authorization:
+
+These would be necessary for a production-ready API.
+
+Basic CRUD Operations:
+
+Implemented basic Create, Read, Update, and Delete operations for the Customer model.
+
+Default Validation:
+
+Minimal validation is implemented, assuming inputs are generally correct. In a full implementation, more robust validation and error handling would be necessary.
+
+Tools and Technologies Used
+
+NET Core 6: For building the Web API.
+Entity Framework Core: For data access and InMemory database.
+NUnit: For writing and running unit tests.
+Microsoft.AspNetCore.Mvc.Testing: For integration testing of the API.
+Visual Studio / Visual Studio Code: IDE for development.
+
+Potential Improvements
+
+Authentication and Authorization:
+
+Implement JWT or OAuth-based authentication to secure the API.
+
+Add role-based authorization to restrict access to certain endpoints.
+
+Persistent Database:
+
+Replace the InMemory database with a persistent database like SQL Server, PostgreSQL, or MySQL.
+
+Implement database migrations and seed data for easier deployment and testing.
+Advanced Validation and Error Handling:
+
+Use libraries for more comprehensive validation.
+Implement global exception handling to provide consistent error responses.
+
+Pagination and Filtering:
+
+Add pagination, sorting, and filtering capabilities to the GET endpoints to handle large datasets efficiently.
+
+DTOs and AutoMapper:
+
+Use Data Transfer Objects (DTOs) to decouple the API layer from the data layer.
+Use AutoMapper to map between entities and DTOs.
+
+CI/CD Pipeline:
+
+Set up a Continuous Integration/Continuous Deployment (CI/CD) pipeline to automate testing and deployment.
+
+Logging and Monitoring:
+
+Implement logging using Serilog or NLog.
+Set up monitoring and alerting for the API using tools like Prometheus and Grafana.
+
+Testing Strategies:
+
+Expand test coverage to include more edge cases and integration tests.
+Consider using Mock frameworks like Moq to isolate unit tests further.

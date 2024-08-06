@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Customer One",
+    "address": "123 First St",
+    "country": "United Kingdom",
+    "phoneNumber": "01234 218469",
+    "website": "https://customerone.com",
+    "contacts": [
+      {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phoneNumber": "01234 232123"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Customer Two",
+    "address": "456 Second St",
+    "country": "Israel",
+    "phoneNumber": "01234 222124",
+    "website": "https://customertwo.com",
+    "contacts": []
+  }
+]
